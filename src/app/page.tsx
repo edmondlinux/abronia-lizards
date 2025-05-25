@@ -4,7 +4,7 @@ import DressStyle from "@/components/homepage/DressStyle";
 import Header from "@/components/homepage/Header";
 import Reviews from "@/components/homepage/Reviews";
 import { Product } from "@/types/product.types";
-import { Review } from "@/types/review.types";
+import { reviewsData } from "@/data/reviews";
 
 async function getProducts() {
   try {
