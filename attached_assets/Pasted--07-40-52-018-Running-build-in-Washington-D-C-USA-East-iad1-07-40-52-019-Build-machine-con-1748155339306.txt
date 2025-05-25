@@ -1,0 +1,77 @@
+[07:40:52.018] Running build in Washington, D.C., USA (East) – iad1
+[07:40:52.019] Build machine configuration: 2 cores, 8 GB
+[07:40:52.038] Cloning github.com/edmondlinux/abronia-lizards (Branch: main, Commit: 3d52f17)
+[07:40:52.225] Previous build caches not available
+[07:40:52.412] Cloning completed: 373.000ms
+[07:40:52.715] Running "vercel build"
+[07:40:53.162] Vercel CLI 42.1.1
+[07:40:53.468] Installing dependencies...
+[07:41:04.823] 
+[07:41:04.824] added 306 packages in 11s
+[07:41:04.824] 
+[07:41:04.824] 57 packages are looking for funding
+[07:41:04.825]   run `npm fund` for details
+[07:41:04.882] Detected Next.js version: 14.2.7
+[07:41:04.886] Running "npm run build"
+[07:41:05.020] 
+[07:41:05.020] > next-ecommerce-shopco@0.1.0 build
+[07:41:05.021] > next build
+[07:41:05.021] 
+[07:41:05.649] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[07:41:05.650] This information is used to shape Next.js' roadmap and prioritize features.
+[07:41:05.650] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[07:41:05.651] https://nextjs.org/telemetry
+[07:41:05.651] 
+[07:41:05.707]   ▲ Next.js 14.2.7
+[07:41:05.707] 
+[07:41:05.775]    Creating an optimized production build ...
+[07:41:31.683] Failed to compile.
+[07:41:31.684] 
+[07:41:31.684] ./src/app/page.tsx
+[07:41:31.685] Error: 
+[07:41:31.685]   [31mx[0m the name `reviewsData` is defined multiple times
+[07:41:31.685]     ,-[[36;1;4m/vercel/path0/src/app/page.tsx[0m:4:1]
+[07:41:31.685]  [2m 4[0m | import Header from "@/components/homepage/Header";
+[07:41:31.686]  [2m 5[0m | import Reviews from "@/components/homepage/Reviews";
+[07:41:31.686]  [2m 6[0m | import { Product } from "@/types/product.types";
+[07:41:31.686]  [2m 7[0m | import { reviewsData } from "@/data/reviews";
+[07:41:31.686]     : [31;1m         ^^^^^|^^^^^[0m
+[07:41:31.686]     :               [31;1m`-- [31;1mprevious definition of `reviewsData` here[0m[0m
+[07:41:31.687]  [2m 8[0m | 
+[07:41:31.687]  [2m 9[0m | async function getProducts() {
+[07:41:31.687]  [2m10[0m |   try {
+[07:41:31.687]  [2m11[0m |     const res = await fetch(`https://f8b5c4d4-5a35-4fa4-a07a-3fc959c6c097-00-xos5xnra644k.kirk.replit.dev/api/products`);
+[07:41:31.687]  [2m12[0m |     if (!res.ok) throw new Error('Failed to fetch products');
+[07:41:31.687]  [2m13[0m |     return res.json();
+[07:41:31.687]  [2m14[0m |   } catch (error) {
+[07:41:31.687]  [2m15[0m |     console.error('Error fetching products:', error);
+[07:41:31.688]  [2m16[0m |     return [];
+[07:41:31.688]  [2m17[0m |   }
+[07:41:31.688]  [2m18[0m | }
+[07:41:31.688]  [2m19[0m | 
+[07:41:31.688]  [2m20[0m | // Fetch all products and split them into different sections
+[07:41:31.688]  [2m21[0m | async function getData() {
+[07:41:31.688]  [2m22[0m |   const allProducts = await getProducts();
+[07:41:31.688]  [2m23[0m |   return {
+[07:41:31.689]  [2m24[0m |     newArrivals: allProducts.slice(0, 4),
+[07:41:31.689]  [2m25[0m |     topSelling: allProducts.slice(4, 8),
+[07:41:31.689]  [2m26[0m |     relatedProducts: allProducts.slice(8, 12)
+[07:41:31.689]  [2m27[0m |   };
+[07:41:31.689]  [2m28[0m | }
+[07:41:31.689]  [2m29[0m | 
+[07:41:31.689]  [2m30[0m | export const reviewsData: Review[] = [
+[07:41:31.689]     : [33;1m             ^^^^^|^^^^^[0m
+[07:41:31.689]     :                   [33;1m`-- [33;1m`reviewsData` redefined here[0m[0m
+[07:41:31.689]  [2m31[0m |   {
+[07:41:31.689]  [2m32[0m |     id: 1,
+[07:41:31.690]  [2m33[0m |     user: "Alex K.",
+[07:41:31.690]     `----
+[07:41:31.690] 
+[07:41:31.690] Import trace for requested module:
+[07:41:31.690] ./src/app/page.tsx
+[07:41:31.690] 
+[07:41:31.700] 
+[07:41:31.701] > Build failed because of webpack errors
+[07:41:31.729] Error: Command "npm run build" exited with 1
+[07:41:31.946] 
+[07:41:34.886] Exiting build container
