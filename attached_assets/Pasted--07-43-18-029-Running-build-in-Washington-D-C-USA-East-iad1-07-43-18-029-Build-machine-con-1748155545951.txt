@@ -1,0 +1,45 @@
+[07:43:18.029] Running build in Washington, D.C., USA (East) – iad1
+[07:43:18.029] Build machine configuration: 2 cores, 8 GB
+[07:43:18.054] Cloning github.com/edmondlinux/abronia-lizards (Branch: main, Commit: be2e8dc)
+[07:43:18.321] Previous build caches not available
+[07:43:18.483] Cloning completed: 429.000ms
+[07:43:18.893] Running "vercel build"
+[07:43:19.328] Vercel CLI 42.1.1
+[07:43:19.609] Installing dependencies...
+[07:43:29.664] 
+[07:43:29.665] added 306 packages in 10s
+[07:43:29.666] 
+[07:43:29.666] 57 packages are looking for funding
+[07:43:29.666]   run `npm fund` for details
+[07:43:29.824] Detected Next.js version: 14.2.7
+[07:43:29.827] Running "npm run build"
+[07:43:29.957] 
+[07:43:29.957] > next-ecommerce-shopco@0.1.0 build
+[07:43:29.957] > next build
+[07:43:29.957] 
+[07:43:31.121] Attention: Next.js now collects completely anonymous telemetry regarding usage.
+[07:43:31.122] This information is used to shape Next.js' roadmap and prioritize features.
+[07:43:31.122] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[07:43:31.123] https://nextjs.org/telemetry
+[07:43:31.123] 
+[07:43:31.249]   ▲ Next.js 14.2.7
+[07:43:31.250] 
+[07:43:31.494]    Creating an optimized production build ...
+[07:44:15.768]  ✓ Compiled successfully
+[07:44:15.769]    Linting and checking validity of types ...
+[07:44:16.105]  ⨯ ESLint: Invalid Options: - Unknown options: useEslintrc, extensions - 'extensions' has been removed.
+[07:44:23.294] Failed to compile.
+[07:44:23.294] 
+[07:44:23.295] ./src/app/shop/page.tsx:77:42
+[07:44:23.295] Type error: Parameter 'product' implicitly has an 'any' type.
+[07:44:23.295] 
+[07:44:23.295] [0m [90m 75 |[39m             [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[07:44:23.295] [0m [90m 76 |[39m             [33m<[39m[33mdiv[39m className[33m=[39m[32m"w-full grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5"[39m[33m>[39m[0m
+[07:44:23.295] [0m[31m[1m>[22m[39m[90m 77 |[39m               {products[33m.[39mslice([35m0[39m[33m,[39m [35m9[39m)[33m.[39mmap((product) [33m=>[39m ([0m
+[07:44:23.295] [0m [90m    |[39m                                          [31m[1m^[22m[39m[0m
+[07:44:23.296] [0m [90m 78 |[39m                 [33m<[39m[33mProductCard[39m key[33m=[39m{product[33m.[39mid} data[33m=[39m{product} [33m/[39m[33m>[39m[0m
+[07:44:23.296] [0m [90m 79 |[39m               ))}[0m
+[07:44:23.296] [0m [90m 80 |[39m             [33m<[39m[33m/[39m[33mdiv[39m[33m>[39m[0m
+[07:44:23.347] Error: Command "npm run build" exited with 1
+[07:44:23.832] 
+[07:44:26.936] Exiting build container
