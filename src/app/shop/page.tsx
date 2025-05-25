@@ -1,5 +1,6 @@
 
 import BreadcrumbShop from "@/components/shop-page/BreadcrumbShop";
+import { Product } from "@/types/product.types";
 import {
   Select,
   SelectContent,
